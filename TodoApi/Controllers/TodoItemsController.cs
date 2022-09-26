@@ -79,6 +79,7 @@ namespace TodoApi.Controllers
         {
             var todoItem = new TodoItem
             {
+                ID = todoItemDTO.ID,
                 Completed = todoItemDTO.Completed,
                 Title = todoItemDTO.Title
             };
