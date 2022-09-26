@@ -94,7 +94,7 @@ namespace TodoApi.Controllers
                 }
             }
 
-            return CreatedAtAction("GetTodoItem", new { id = todoItem.ID }, todoItem);
+            return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.ID }, todoItem);
         }
 
         // DELETE: api/TodoItems/5
